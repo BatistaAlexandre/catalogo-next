@@ -1,0 +1,128 @@
+/* Estilos para o MenuLateral */
+
+/* Estilos para o MenuLateral */
+.menu-lateral {
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Torna o menu lateral fixo na página */
+  top: 0; /* Alinha o menu lateral ao topo da página */
+  left: 0; /* Alinha o menu lateral à esquerda da página */
+  z-index: 999; /* Garante que o menu lateral fique acima dos outros elementos */
+}
+
+/* Estilos para o contêiner principal do Filtro */
+.container {
+  display: flex;
+  margin-left: 220px; /* Adiciona um espaçamento à esquerda para compensar a largura do menu lateral */
+}
+
+/* Estilos para o logo da empresa no MenuLateral */
+.menu-lateral .logo-empresa {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o contêiner do filtro no MenuLateral */
+.menu-lateral .filtro-container {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o seletor no MenuLateral */
+.menu-lateral select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.menu-lateral select:hover,
+.menu-lateral select:focus {
+  border-color: #007bff;
+}
+
+/* Estilos para os botões no MenuLateral */
+.menu-lateral .menu-botoes button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #555;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-lateral .menu-botoes button:last-child {
+  margin-bottom: 0; /* Remove a margem inferior do último botão */
+}
+
+.menu-botoes button.selecionado {
+  background-color: #007bff;
+  color: #ffffff;
+  border: 1px solid #007bff;
+}
+
+/* Estilos para o componente Filtro */
+
+/* Estilos para o contêiner principal do Filtro */
+.container {
+  display: flex;
+}
+
+/* Estilos para o contêiner dos talentos no Filtro */
+.talentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos para os cards de talento no Filtro */
+.talento-card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.talento-card h2 {
+  margin-bottom: 10px;
+}
+
+.talento-card p {
+  margin-bottom: 10px;
+}
+
+.talento-card video {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para os botões nos cards de talento no Filtro */
+.talento-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.talento-card button + button {
+  margin-top: 5px;
+}
+
+/* Estilos para o contêiner do filtro no Filtro */
+.filtro-container {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
